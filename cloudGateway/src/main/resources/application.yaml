@@ -1,0 +1,19 @@
+server:  
+  port: 9999
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: cloudgateway
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      routes:
+        - id: urlShortner
+          uri: lb://urlShortner
+          predicates:
+            - Path=/**

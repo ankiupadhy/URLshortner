@@ -10,5 +10,6 @@ public class Constants {
 	public static final String SOURCE_ZNODE="/config";
 	public static final String COMMON_PROPERTY_ZNODE="/config/application";
 	public static final String ZNODE_PATH_SEPERATOR="/";
+	public static final String CONFIGURATION_LOADED_MESSAGE="Application configuration loaded successfully for all active instances";
 }
 

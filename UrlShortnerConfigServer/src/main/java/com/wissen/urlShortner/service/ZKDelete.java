@@ -1,4 +1,4 @@
-package com.wissen.urlShortner.configurationService;
+package com.wissen.urlShortner.service;
 import org.springframework.stereotype.Service;
 
 @Service
